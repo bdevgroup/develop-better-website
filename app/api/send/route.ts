@@ -11,7 +11,7 @@ export async function POST(request: Request) {
     //   to: ['delivered@resend.dev'],
     //   subject: "Hello world",
         from: `Youssef <bitardev3@gmail.com>`,
-        to: "bitardev2@gmail.com",
+        to: "betterdevgroup@gmail.com",
         subject: "Demade d'information",
         text: "This works!",
       react: EmailTemplate({ firstName: "Youssef" }) as React.ReactElement,
