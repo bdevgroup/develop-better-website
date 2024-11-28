@@ -46,7 +46,7 @@ const Navigation = () => {
         <div className="flex flex-row gap-3 items-center px-6 max-mobile:pl-1">
           <Link href={"/"}>
             <Image
-              src={theme === "light" ? "/logo_dark.png" : "/logo_light.png"}
+              src={theme === "light" ? "./logo_dark.png" : "./logo_light.png"}
               alt="Develop better logo"
               width={80}
               height={40}
