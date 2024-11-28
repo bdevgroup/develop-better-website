@@ -19,7 +19,7 @@ const NumbersSection = () => {
         >
           C’est temps de faire passer votre image de marketing numérique{" "}
           <Image
-            src="/icon_graph.svg"
+            src="./icon_graph.svg"
             alt="icon graph"
             width={36}
             height={30}
@@ -27,7 +27,7 @@ const NumbersSection = () => {
           />{" "}
           au niveau supérieur{" "}
           <Image
-            src="/tiny_team.webp"
+            src="./tiny_team.webp"
             alt="Develop Better Team"
             width={90}
             height={40}
@@ -35,7 +35,7 @@ const NumbersSection = () => {
           />{" "}
           Nous sommes toujours là pour vous aider à développer votre entreprise{" "}
           <Image
-            src="/icon_play.svg"
+            src="./icon_play.svg"
             alt="icon play"
             width={36}
             height={36}
