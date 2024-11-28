@@ -18,7 +18,7 @@ const page = () => {
         <HeadingPageSection
           title="Nous vous répondrons dans une heure."
           description="Egestas diam in arcu cursus euismod quis viverra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Bibendum ut tristique et egestas. Facilisi cras fermentum odio eu feugiat nibh ipsum."
-          icon="/icon_24h.svg"
+          icon="./icon_24h.svg"
         />
         <div className="flex justify-between items-start w-full min-h-[500px] pt-11 max-tablet:flex-col">
           <div
