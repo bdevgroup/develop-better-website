@@ -3,12 +3,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // reactStrictMode: true,
-  // output: "export",
-  // images: {
-  //   loader: "custom",
-  //   loaderFile: "./myImageLoader.js",
-  // },
+  output: process.env.NODE_ENV === "production" ? "export" : undefined,
 };
 
 export default nextConfig;

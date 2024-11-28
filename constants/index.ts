@@ -2,54 +2,54 @@
 export const Socials = [
   {
     name: "Telegram",
-    src: "/telegram.svg",
+    src: "./telegram.svg",
   },
   {
     name: "Facebook",
-    src: "/facebook.svg",
+    src: "./facebook.svg",
   },
   {
     name: "Instagram",
-    src: "/instagram.svg",
+    src: "./instagram.svg",
   },
   {
     name: "Whatsapp",
-    src: "/whatsapp.svg",
+    src: "./whatsapp.svg",
   },
   {
     name: "Twitter",
-    src: "/twitter.svg",
+    src: "./twitter.svg",
   },
 ];
 export const Features = [
   {
     title: "AI",
     text: "Projets basés sur l'IA",
-    src: "/icon_ai.svg",
+    src: "./icon_ai.svg",
     selected: false,
   },
   {
     title: "Croissance",
     text: "Obtenez plus de clients avec notre accompagnement",
-    src: "/icon_croissance.svg",
+    src: "./icon_croissance.svg",
     selected: true,
   },
   {
     title: "IT",
     text: "Développement Site Web amélioré",
-    src: "/icon_it.svg",
+    src: "./icon_it.svg",
     selected: false,
   },
   {
     title: "Qualité",
     text: "Assurance qualité",
-    src: "/icon_quality.svg",
+    src: "./icon_quality.svg",
     selected: false,
   },
   {
     title: "Soutien",
     text: "Gagnez du temps et de l'argent",
-    src: "/icon_soutien.svg",
+    src: "./icon_soutien.svg",
     selected: false,
   },
 ];

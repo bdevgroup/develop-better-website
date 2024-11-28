@@ -48,7 +48,7 @@ const BookDemo = () => {
           data-aos-anchor-placement="top-bottom"
         >
           Réservez une démo
-          <Image src="/icon_arrow.svg" alt="arrow" width={14} height={13} />
+          <Image src="./icon_arrow.svg" alt="arrow" width={14} height={13} />
         </Link>
       </div>
     </div>
