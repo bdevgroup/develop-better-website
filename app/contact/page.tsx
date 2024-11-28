@@ -52,7 +52,7 @@ const page = () => {
               Duis convallis convallis pretium nibh ipsumtellus id interdum
               velit laoreet.
             </p>
-            <Image src="/bg_hello.webp" alt="Hello" width={511} height={200} />
+            <Image src="./bg_hello.webp" alt="Hello" width={511} height={200} />
             <span className="text-white font-bold monteserrat text-xl">
               Demandes de renseignements
             </span>

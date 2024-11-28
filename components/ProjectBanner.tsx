@@ -31,7 +31,7 @@ const ProjectBanner = () => {
           </div>
         </div>
         <div className="w-full max-w-[50%] flex justify-end max-tablet:justify-center max-tablet:max-w-[50%] max-tablet:m-auto">
-          <Image src="/graph2.svg" alt="graph" width={424} height={268} />
+          <Image src="./graph2.svg" alt="graph" width={424} height={268} />
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ const LinkArrow = ({ text, url }: Props) => {
       data-aos="fade-right" data-aos-delay="300"
     >
       {text}
-      <Image src="/icon_arrow2.svg" alt="arrow" width={14} height={12} className="group-hover/link:translate-x-1 transition-transform ease-in-out" />
+      <Image src="./icon_arrow2.svg" alt="arrow" width={14} height={12} className="group-hover/link:translate-x-1 transition-transform ease-in-out" />
     </Link>
   );
 };

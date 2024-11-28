@@ -4,7 +4,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   // reactStrictMode: true,
-  // output: "export",
+  output: "export",
   // images: {
   //   loader: "custom",
   //   loaderFile: "./myImageLoader.js",
