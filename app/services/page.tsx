@@ -12,7 +12,7 @@ const page = () => {
         <HeadingPageSection
           title="Ce que nous avons à offrir"
           description="Egestas diam in arcu cursus euismod quis viverra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Bibendum ut tristique et egestas. Facilisi cras fermentum odio eu feugiat nibh ipsum."
-          icon="/icon_services.svg"
+          icon="./icon_services.svg"
         />
         <div className="w-full flex justify-between items-start gap-2 flex-wrap pb-40 max-tablet:flex-col">
           {Services.map((service, index) => (

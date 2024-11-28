@@ -50,7 +50,7 @@ const Navigation = () => {
               alt="Develop better logo"
               width={80}
               height={40}
-              className="w-full h-full object-contain relative z-50"
+              className="relative z-50"
             />
           </Link>
         </div>
