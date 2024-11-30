@@ -34,7 +34,7 @@ const MobileMenu = ({ path }: Props) => {
             className="bg-transparent hover:bg-[rgba(255,255,255,0.1)] rounded-md p-2"
           >
             <Image
-              src="./icon_lightmode.svg"
+              src="/icon_lightmode.svg"
               alt="lightmode"
               width={30}
               height={30}
