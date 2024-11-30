@@ -24,8 +24,8 @@ const HeroSection = () => {
       style={{
         backgroundImage:
           theme === "dark"
-            ? "url(./background_black.webp)"
-            : "url(./background_light2.webp)",
+            ? "url(/background_black.webp)"
+            : "url(/background_light2.webp)",
       }}
     >
       <div className="flex justify-between items-start w-full -mt-60 px-10 md:px-40 pb-56 md:pb-20 max-mobile:px-11">
