@@ -4,12 +4,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   output: process.env.NODE_ENV === "production" ? "export" : undefined,
-  images:
+  basePath:
     process.env.NODE_ENV === "production"
-      ? {
-          loader: "custom",
-          loaderFile: "/myImageLoader.js",
-        }
+      ? "/develop-better-website"
       : undefined,
 };
 
