@@ -16,7 +16,7 @@ const ImageStyle1 = () => {
     >
       <div className="flex justify-center items-center relative before:absolute before:z-0 before:translate-x-[40px] before:-translate-y-[40px] before:rounded-l-[10px] before:rounded-r-[100px] before:rounded-bl-[10px] before:rounded-br-[10px] before:h-full before:w-full before:bg-gradient-to-b before:from-[rgba(255,255,255,0.1)] before:to-transparent">
         <Image
-          src="./about_bg.webp"
+          src="/about_bg.webp"
           alt="About Develop Better"
           width={420}
           height={960}

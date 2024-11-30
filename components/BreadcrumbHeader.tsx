@@ -16,7 +16,7 @@ const BreadcrumbHeader = ({ currentPage, parentPage, servicePage }: Props) => {
   return (
     <div
       className="w-screen min-h-[300px] bg-cover flex flex-col justify-center items-center gap-4 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-b before:from-transparent before:to-[#000a13]"
-      style={{ backgroundImage: "url(./bg_page.webp)" }}
+      style={{ backgroundImage: "url(/bg_page.webp)" }}
     >
       <h2
         className="text-white montserrat text-5xl font-bold mt-16 max-mobile:text-3xl relative z-10 max-tablet:text-center max-tablet:px-5"
