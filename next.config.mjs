@@ -8,7 +8,7 @@ const nextConfig = {
     process.env.NODE_ENV === "production"
       ? {
           loader: "custom",
-          loaderFile: "./myImageLoader.js",
+          loaderFile: "/myImageLoader.js",
         }
       : undefined,
 };
