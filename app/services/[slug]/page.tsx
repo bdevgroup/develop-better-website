@@ -19,7 +19,8 @@ export function generateStaticParams() {
 interface ParamsProps {
   slug: string;
 }
-const page = async ({ params }: { params: ParamsProps }) => {
+const page = async (props: { params: Promise<ParamsProps> }) => {
+  const params = await props.params;
   const { slug } = params;
   console.log(slug);
   const service = Services.find((s) => urlSlug(s.title) === slug) ?? undefined;
