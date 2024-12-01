@@ -20,7 +20,8 @@ export function generateStaticParams() {
   ];
 }
 
-const page = ({ params }: { params: { slug: string } }) => {
+const page = async (props: { params: Promise<{ slug: string }> }) => {
+  const params = await props.params;
   const templateSlug = params.slug;
   const templateObject =
     SiteVitrineModels.find((s) => s.slug === templateSlug) || undefined;

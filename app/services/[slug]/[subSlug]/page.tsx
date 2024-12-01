@@ -26,7 +26,8 @@ export function generateStaticParams() {
   ];
 }
 
-const page = ({ params }: { params: { subSlug: string } }) => {
+const page = async (props: { params: Promise<{ subSlug: string }> }) => {
+  const params = await props.params;
   const pageType = params.subSlug;
   return (
     <>
