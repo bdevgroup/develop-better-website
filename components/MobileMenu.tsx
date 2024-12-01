@@ -9,6 +9,8 @@ interface Props {
   path: string;
 }
 const MobileMenu = ({ path }: Props) => {
+  const basePath = process.env.NEXT_PUBLIC_BASEPATH;
+
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -34,7 +36,7 @@ const MobileMenu = ({ path }: Props) => {
             className="bg-transparent hover:bg-[rgba(255,255,255,0.1)] rounded-md p-2"
           >
             <Image
-              src="/icon_lightmode.svg"
+              src={`${basePath}/icon_lightmode.svg`}
               alt="lightmode"
               width={30}
               height={30}
