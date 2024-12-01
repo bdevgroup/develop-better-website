@@ -12,6 +12,8 @@ import ScrollTopBtn from "./ScrollTopBtn";
 import { usePathname } from "next/navigation";
 
 const FooterSection = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASEPATH;
+
   const pathname = usePathname();
   return (
     <>
@@ -34,7 +36,7 @@ const FooterSection = () => {
                 data-aos-anchor-placement="top-bottom"
               >
                 <Image
-                  src="/logo_light.png"
+                  src={`${basePath}/logo_light.png`}
                   alt="Develop Better Digital logo"
                   width={100}
                   height={50}

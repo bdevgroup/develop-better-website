@@ -5,6 +5,7 @@ import Image from "next/image";
 import LinkArrow from "./LinkArrow";
 
 const AboutSection = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASEPATH;
   return (
     <div className="py-24 w-screen min-h-screen max-tablet:w-full max-tablet:h-auto">
       <div className="max-w-7xl m-auto max-tablet:px-11">
@@ -16,7 +17,7 @@ const AboutSection = () => {
         <BodyText text="Lorem ipsum dolor sit amet consectetur. Volutpat metus pellentesque gravida vel turpis pharetra sit leo. Eget elit dictumst at at ut sed nunc at quam. Gravida pulvinar fames vitae viverra metus cursus. Sodales ut sit convallis risus. Gravida at neque ut est pharetra id. Eget sapien tristique id proin. Augue ut elit volutpat luctus elit vitae." />
         <div className="flex justify-center items-center px-20 mix-blend-plus-lighter -translate-y-[10%] max-tablet:translate-y-0 max-tablet:px-0">
           <Image
-            src="/mmo_bg.webp"
+            src={`${basePath}/mmo_bg.webp`}
             alt="à propos Develop Better"
             width={966}
             height={544}

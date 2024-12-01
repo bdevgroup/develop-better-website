@@ -38,6 +38,8 @@ interface Props {
 }
 
 const TemplatePreview = ({ model, config }: Props) => {
+  const basePath = process.env.NEXT_PUBLIC_BASEPATH;
+
   const {
     name,
     slug,
@@ -429,7 +431,7 @@ const TemplatePreview = ({ model, config }: Props) => {
             <div className="flex flex-row gap-3 items-center max-mobile:pl-1">
               <Link href={"/"}>
                 <Image
-                  src="/logo_light.png"
+                  src={`${basePath}/logo_light.png`}
                   alt="Develop Better"
                   width={70}
                   height={30}

@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const BookDemo = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASEPATH;
+
   return (
     <div className="py-24 w-screen bg-[rgba(0,0,0,0.2)] px-20 max-tablet:px-11 max-tablet:w-full">
       <div className="max-w-7xl m-auto flex justify-center flex-col items-center py-10 gap-10">
@@ -48,7 +50,7 @@ const BookDemo = () => {
           data-aos-anchor-placement="top-bottom"
         >
           Réservez une démo
-          <Image src="/icon_arrow.svg" alt="arrow" width={14} height={13} />
+          <Image src={`${basePath}/icon_arrow.svg`} alt="arrow" width={14} height={13} />
         </Link>
       </div>
     </div>
