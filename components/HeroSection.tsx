@@ -55,23 +55,6 @@ const HeroSection = () => {
           </p>
           <LinkArrow url="#" text="Nous vous dirons" />
         </div>
-        <div className="opacity-0 flex justify-center items-center pr-20 max-desktop:pr-0 max-desktop:pt-16 desktop:ml-16 max-tablet:absolute max-tablet:right-0 max-tablet:translate-x-[50%] max-tablet:mix-blend-lighten">
-          <Image
-            src={
-              theme === "dark"
-                ? "/abstract_3d_box2.gif"
-                : "/abstract_3d_box2_light.gif"
-            }
-            alt="Abstract"
-            width={500}
-            height={500}
-            className={`hidden mix-blend-${
-              theme === "light"
-                ? "darken transform translate-y-[30%] -translate-x-[20%]"
-                : "lighten"
-            } max-desktop:max-w-[350px] max-desktop:max-h-[350px]`}
-          />
-        </div>
       </div>
       <div className="absolute w-full px-40 bottom-0 max-tablet:px-10 max-tablet:w-screen">
         <div className="flex items-center justify-between gap-5 max-tablet:hidden">
