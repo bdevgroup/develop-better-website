@@ -3,6 +3,8 @@ import Image from "next/image";
 import React from "react";
 import Countup from "react-countup";
 const NumbersSection = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASEPATH;
+
   return (
     <div className="max-w-7xl m-auto max-tablet:px-11 max-tablet:mt-14">
       <div className="flex flex-col justify-center items-center">
@@ -19,7 +21,7 @@ const NumbersSection = () => {
         >
           C’est temps de faire passer votre image de marketing numérique{" "}
           <Image
-            src="/icon_graph.svg"
+            src={`${basePath}/icon_graph.svg`}
             alt="icon graph"
             width={36}
             height={30}
@@ -27,7 +29,7 @@ const NumbersSection = () => {
           />{" "}
           au niveau supérieur{" "}
           <Image
-            src="/tiny_team.webp"
+            src={`${basePath}/tiny_team.webp`}
             alt="Develop Better Team"
             width={90}
             height={40}
@@ -35,7 +37,7 @@ const NumbersSection = () => {
           />{" "}
           Nous sommes toujours là pour vous aider à développer votre entreprise{" "}
           <Image
-            src="/icon_play.svg"
+            src={`${basePath}/icon_play.svg`}
             alt="icon play"
             width={36}
             height={36}
