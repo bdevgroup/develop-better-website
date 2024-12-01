@@ -10,6 +10,8 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 import { useTheme } from "next-themes";
 
 const Navigation = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASEPATH;
+
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -46,7 +48,7 @@ const Navigation = () => {
         <div className="flex flex-row gap-3 items-center px-6 max-mobile:pl-1">
           <Link href={"/"}>
             <Image
-              src={theme === "light" ? "/logo_dark.png" : "/logo_light.png"}
+              src={theme === "light" ? `${basePath}/logo_dark.png` : `${basePath}/logo_light.png`}
               alt="Develop better logo"
               width={80}
               height={40}
