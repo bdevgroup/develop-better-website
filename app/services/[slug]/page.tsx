@@ -16,9 +16,13 @@ export function generateStaticParams() {
     { slug: urlSlug("Sourcing") },
   ];
 }
-const page = ({ params }: { params: { slug: string } }) => {
-  const service =
-    Services.find((s) => urlSlug(s.title) === params.slug) ?? undefined;
+interface ParamsProps {
+  slug: string;
+}
+const page = async ({ params }: { params: ParamsProps }) => {
+  const { slug } = params;
+  console.log(slug);
+  const service = Services.find((s) => urlSlug(s.title) === slug) ?? undefined;
   return (
     <>
       <BreadcrumbHeader
@@ -26,8 +30,8 @@ const page = ({ params }: { params: { slug: string } }) => {
         currentPage={service?.title || ""}
       />
       <div className="w-screen min-h-screen">
-        {service?.pageDetailContentSettings.map((setting) => (
-          <div key={setting.componentName}>
+        {service?.pageDetailContentSettings.map((setting, index) => (
+          <div key={`${setting.componentName}_${index}`}>
             {setting.componentName === "ImageTextSection" ? (
               <ImageTextCard
                 imageOrientation={setting.imageSide}
